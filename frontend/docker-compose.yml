@@ -1,0 +1,8 @@
+version: '3.8'
+services:
+  vue-app:
+    build: .
+    container_name: fubsi-site
+    ports:
+      - "80:80"
+    restart: unless-stopped
