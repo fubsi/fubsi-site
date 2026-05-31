@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;700&display=swap');
+
+:root {
+  --bg-main: #141414;      /* Bleibt beim originalen, neutralen Dunkelgrau */
+  --bg-sidebar: #1a1a1a;
+  --accent: #93c5fd;       /* Kühles Eisblau (Pastell-artig) */
+  --accent-hover: #bfdbfe; /* Noch helleres Eisblau */
+  --text-white: #f0f0f0;
+  --text-muted: #7a7a7a;
+  --grid-line: rgba(255, 255, 255, 0.04);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--bg-main);
+  color: var(--text-white);
+  font-family: 'Space Grotesk', sans-serif;
+  overflow-x: hidden;
+}
+
+/* Das dezente vertikale Raster im Hintergrund */
+/* Mobile First: Raster startet ganz links */
+.bg-grid {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: space-evenly;
+  z-index: -1;
+  pointer-events: none;
+}
+
+/* Desktop: Platz für die Sidebar lassen */
+@media (min-width: 768px) {
+  .bg-grid {
+    left: 100px; 
+  }
+}
