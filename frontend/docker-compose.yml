@@ -4,5 +4,5 @@ services:
     build: .
     container_name: fubsi-site
     ports:
-      - "80:80"
+      - "4000:4000"
     restart: unless-stopped
