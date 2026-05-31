@@ -18,7 +18,7 @@ FROM nginx:alpine
 # Das fertig gebaute Verzeichnis aus der Build-Stage in den Nginx-Webordner kopieren
 COPY --from=build /app/dist /usr/share/nginx/html
 
-# Port 80 freigeben
+# Port 4000 freigeben
 EXPOSE 4000
 
 # Nginx starten
