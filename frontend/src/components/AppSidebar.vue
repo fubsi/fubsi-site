@@ -4,7 +4,7 @@
 <template>
   <aside class="sidebar">
     <div class="logo">
-      <span class="logo-mark">F_</span>
+      <span class="logo-mark">F<span class="logo-underscore fx-blink-caret">_</span></span>
     </div>
     
     <div class="vertical-text-container">
@@ -59,6 +59,10 @@
   color: var(--accent);
   font-weight: 700;
   font-size: 1.5rem;
+}
+
+.logo-underscore {
+  display: inline-block;
 }
 
 .vertical-text-container {
