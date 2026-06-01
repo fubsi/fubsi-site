@@ -1,5 +1,6 @@
 <script setup>
 import './assets/agency.css'
+import './assets/objects.css'
 import AppSidebar from './components/AppSidebar.vue'
 import AppNav from './components/AppNav.vue'
 </script>

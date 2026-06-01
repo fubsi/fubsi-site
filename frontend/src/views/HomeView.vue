@@ -4,15 +4,17 @@
       <span class="decorative-line"></span> tech & infrastructure
     </div>
     
-    <h1 class="massive-text">
-      <span class="white-text">fubsi</span><br>
-      <span class="accent-text">builds things</span>
+    <h1 class="massive-text hero-headline">
+      <span class="hero-top-line">
+        <span class="text-white">fubsi</span>
+        <span class="smol-text">Frameworks & Unified Backends for Smart Integrations</span>
+      </span>
+      <span class="text-accent">builds things</span>
     </h1>
   </section>
 </template>
 
 <style scoped>
-/* Hierhin kommt NUR das CSS, das spezifisch für die Hero-Section war (aus der alten App.vue) */
 .hero-section {
   flex-grow: 1;
   display: flex;
@@ -31,34 +33,30 @@
   letter-spacing: 1px;
 }
 
-.decorative-line {
-  display: inline-block;
-  width: 30px;
-  height: 2px;
-  background-color: var(--accent);
+.hero-headline {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.1em;
 }
 
-.massive-text {
-  margin: 0;
-  line-height: 1.1;
-  font-size: clamp(3rem, 16vw, 10rem);
-  font-weight: 700;
-  letter-spacing: -1px;
-  word-break: break-word;
+.hero-top-line {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.1em;
 }
-
-.white-text { color: var(--text-white); }
-.accent-text { color: var(--accent); }
 
 @media (min-width: 768px) {
   .hero-section {
     padding-left: 10vw;
     padding-bottom: 10vh;
   }
-  .decorative-line { width: 50px; }
-  .massive-text {
-    letter-spacing: -2px;
-    word-break: normal;
+
+  .hero-top-line {
+    flex-direction: row;
+    align-items: center;
+    gap: 0.28em;
   }
 }
 </style>

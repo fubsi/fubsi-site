@@ -4,7 +4,10 @@ import ProjectCard from '../components/ProjectCard.vue'
 
 <template>
   <section class="page-section">
-    <span class="decorative-line"></span><h2>Meine Projekte</h2>
+    <div class="section-header">
+      <span class="decorative-line"></span>
+      <h2>Meine Projekte</h2>
+    </div>
     <ProjectCard
       title="fubsi-site"
       description="Mein digitales Zuhause: Eine minimalistische Vue.js Website als zentraler Hub für meine Projekte rund um Softwareentwicklung im Bereich KI, Webentwicklung und mehr."
@@ -22,12 +25,16 @@ import ProjectCard from '../components/ProjectCard.vue'
 
 <style scoped>
 .page-section {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
   padding: 2rem 1.5rem;
 }
 
 @media (min-width: 768px) {
   .page-section {
     padding: 10vh 10vw 2rem;
+    gap: 1.5rem;
   }
 }
 </style>
