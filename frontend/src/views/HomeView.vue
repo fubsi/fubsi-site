@@ -1,3 +1,7 @@
+<script setup>
+import '../assets/home.css'
+</script>
+
 <template>
   <section class="hero-section">
     <div class="tagline">
@@ -13,50 +17,3 @@
     </h1>
   </section>
 </template>
-
-<style scoped>
-.hero-section {
-  flex-grow: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 2rem 1.5rem;
-}
-
-.tagline {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  color: var(--text-white);
-  font-size: 0.9rem;
-  margin-bottom: 1.5rem;
-  letter-spacing: 1px;
-}
-
-.hero-headline {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 0.1em;
-}
-
-.hero-top-line {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 0.1em;
-}
-
-@media (min-width: 768px) {
-  .hero-section {
-    padding-left: 10vw;
-    padding-bottom: 10vh;
-  }
-
-  .hero-top-line {
-    flex-direction: row;
-    align-items: center;
-    gap: 0.28em;
-  }
-}
-</style>

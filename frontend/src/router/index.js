@@ -14,6 +14,11 @@ const router = createRouter({
       name: 'projects',
       // Lazy Loading: Wird erst geladen, wenn der User darauf klickt (besser für Performance)
       component: () => import('../views/ProjectsView.vue')
+    },
+    {
+      path: '/about',
+      name: 'about',
+      component: () => import('../views/AboutView.vue')
     }
   ]
 })

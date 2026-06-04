@@ -1,5 +1,6 @@
 <script setup>
 import ProjectCard from '../components/ProjectCard.vue'
+import '../assets/projects.css'
 </script>
 
 <template>
@@ -22,19 +23,3 @@ import ProjectCard from '../components/ProjectCard.vue'
     />
   </section>
 </template>
-
-<style scoped>
-.page-section {
-  display: flex;
-  flex-direction: column;
-  gap: 1.25rem;
-  padding: 2rem 1.5rem;
-}
-
-@media (min-width: 768px) {
-  .page-section {
-    padding: 10vh 10vw 2rem;
-    gap: 1.5rem;
-  }
-}
-</style>

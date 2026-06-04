@@ -8,7 +8,7 @@
         <router-link to="/projects">Projekte</router-link>
         <router-link to="/about">Über mich</router-link>
     </div>
-    <button class="cta-button">kontakt aufnehmen &rarr;</button>
+    <!--<button class="cta-button">kontakt aufnehmen &rarr;</button>-->
   </nav>
 </template>
 
